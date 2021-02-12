@@ -1,6 +1,6 @@
 node('master') {
     stage("Fetch Source Code") {
-        git ''
+        git 'https://github.com/chennareddipalligayathri/python-jenkins-pipeline'
     }
     
     dir('Lesson5') {
