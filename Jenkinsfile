@@ -3,8 +3,7 @@ node('master') {
         git 'https://github.com/chennareddipalligayathri/python-jenkins-pipeline'
     }
     
-    dir('Lesson5') {
-        printMessage('Running Pipeline')
+ 
         stage("Testing") {
             sh 'python test_functions.py'
         }
@@ -17,7 +16,6 @@ node('master') {
             
         }
         printMessage('Pipeline Complete')
-    }
 }
 
 def printMessage(message) {
